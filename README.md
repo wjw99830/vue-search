@@ -1,6 +1,10 @@
 # vue-search
 Search function using vue-function-api, support chinese pinyin.
 
+# Install
+> yarn add @wpkg/vue-search
+> npm i @wpkg/vue-search
+
 # Usage
 ```vue
 <template>
