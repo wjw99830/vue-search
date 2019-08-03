@@ -16,10 +16,34 @@ import { useSearch } from 'vue-search';
 export default Vue.extend({
   setup() {
     const list = value<any[]>([
-      { name: 'foo' },
-      { name: 'bar' },
+      {
+        name: 'foo',
+        hobbies: [{
+          name: 'reading',
+          id: 0
+        }],
+        wh: {
+          weight: '75kg',
+          height: '180cm',
+        },
+      },
+      {
+        name: 'bar',
+        hobbies: [{
+          name: 'music',
+          id: 1,
+        }],
+        wh: {
+          weight: '55kg',
+          height: '170cm',
+        },
+      },
     ]);
-    const [keywords, filtered] = useSearch(list);
+    const [keywords, filtered] = useSearch(list, {
+      // includeProps: ['name', 'wh.height', 'hobbies.name'],
+      // excludeProps: [],
+      // excludeId: true,
+    });
     return { keywords, filtered };
   },
 });
