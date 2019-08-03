@@ -1,7 +1,7 @@
 {
   "name": "@wpkg/vue-search",
-  "version": "1.0.0",
-  "description": "search vue vue3 chinese pinyin",
+  "version": "1.0.1",
+  "description": "Seach function using vue-function-api, support Chinese pinyin and multiple keywords",
   "main": "src/main.ts",
   "module": "dist/vue-search.esm.js",
   "repository": "https://www.github.com/wjw99830/vue-search.git",
